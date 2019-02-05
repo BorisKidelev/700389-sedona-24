@@ -74,8 +74,32 @@
     <section class="search">
       <h2 class="search__title">Заинтересовались?</h2>
       <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
-      <!-- Здесь будет форма -->
+      <button class="search__button search__button--open" type="button">Поиск гостиницы в Седоне</button>
+      <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="date-arrival">Дата заезда:</label>
+          <input id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+          <button class="search__calendar-picker" type="button">Выбор даты заезда</button>
+        </p>
+        <p>
+          <label for="date-exit">Дата выезда:</label>
+          <input id="date-exit" type="text" name="date-exit" value="" placeholder="4 июля 2017">
+          <button class="search__calendar-picker" type="button">Выбор даты выезда</button>
+        </p>
+        <p>
+          <label for="amound-adults">Взрослые:</label>
+          <button class="button search__amound-adults search__amound-adults--decrease" type="button">-</button>
+          <input id="amound-adults" type="text" name="amound-adults" value="" placeholder="2">
+          <button class="button search__amound-adults search__amound-adults--increase" type="button">+</button>
+        </p>
+        <p>
+          <label for="amound-children">Дети:</label>
+          <button class="button search__amound-children search__amound-children--decrease" type="button">-</button>
+          <input id="amound-children" type="text" name="amound-children" value="" placeholder="0">
+          <button class="button search__amound-children search__amound-children--increase" type="button">+</button>
+        </p>
+        <button class="search__button search__button--find" type="submit">Найти</button>
+      </form>
     </section>
 
     <section class="map">
@@ -87,7 +111,7 @@
   <footer class="main-footer">
     <p class="main-footer__hashtag">#visitSEDONA></p>
     <ul class="main-footer__social socials">
-      <li class="socials__item socials__item--tw"><a href="#">Twitter</a></li>
+      <li class="socials__item socials__item--tw"><a href="#" >Twitter</a></li>
       <li class="socials__item socials__item--fb"><a href="#">Facebook</a></li>
       <li class="socials__item socials__item--yt"><a href="#">YouTube</a></li>
     </ul>
