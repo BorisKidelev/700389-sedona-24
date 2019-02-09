@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Отдых в городе Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -11,9 +14,9 @@
         <img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
       </a>
       <ul class="site-navigation">
-        <li class="site-navigation__item"><a href="info.html">Информация</a></li>
-        <li class="site-navigation__item"><a href="media.html">Фото и видео</a></li>
-        <li class="site-navigation__item"><a href="map.html">Карта штата</a></li>
+        <li class="site-navigation__item"><a href="#">Информация</a></li>
+        <li class="site-navigation__item"><a href="#">Фото и видео</a></li>
+        <li class="site-navigation__item"><a href="#">Карта штата</a></li>
         <li class="site-navigation__item"><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -22,69 +25,72 @@
   <main>
     <h1 class="visually-hidden">Город Седона</h1>
 
-    <section class="promo">
-      <h2 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="promo__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    </section>
+    <div class="promo">
+    </div>
 
 
     <section class="features">
-      <h2 class="visually-hidden">Причины</h2>
+      <h2 class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <ul class="features__list">
-        <li class="features__item features__item--detailed features__item--real">
-          <h3 class="features__title">Настоящий городок</h3>
-          <p class="features__number">— №1 —</p>
-          <p class="features__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <li class="features__item item-feature item-feature--detailed item-feature--real">
+          <h3 class="item-feature__name">Настоящий<br> городок</h3>
+          <p class="item-feature__number">— №1 —</p>
+          <p class="item-feature__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
-        <li class="features__item features__item--house">
-          <h3 class="features__title">Жильё</h3>
-          <p class="features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <li class="features__item item-feature item-feature--house">
+          <h3 class="item-feature__name">Жильё</h3>
+          <p class="item-feature__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="features__item features__item--food">
-          <h3 class="features__title">Еда</h3>
-          <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        <li class="features__item item-feature item-feature--food">
+          <h3 class="item-feature__name">Еда</h3>
+          <p class="item-feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="features__item features__item--souvenir">
-          <h3 class="features__title">Сувениры</h3>
-          <p class="features__description">Не только китайского, но и местного производства!</p>
+        <li class="features__item item-feature item-feature--souvenir">
+          <h3 class="item-feature__name">Сувениры</h3>
+          <p class="item-feature__description">Не только китайского, но и местного производства!</p>
         </li>
-        <li class="features__item features__item--detailed features__item--bridge">
-          <h3 class="features__title">Там есть Мост дьявола</h3>
-          <p class="features__number">— №2 —</p>
-          <p class="features__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <li class="features__item item-feature item-feature--detailed item-feature--bridge">
+          <h3 class="item-feature__name">Там есть<br> Мост дьявола</h3>
+          <p class="item-feature__number">— №2 —</p>
+          <p class="item-feature__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </li>
-        <li class="features__item features__item--brief">
-          <h3 class="features__title">Небольшая площадь</h3>
-          <p class="features__number">— №3 —</p>
-          <p class="features__description">Все достопримечательности находятся очень близко</p>
+        <li class="features__item item-feature item-feature--brief">
+          <h3 class="item-feature__name">Небольшая<br> площадь</h3>
+          <p class="item-feature__number">— №3 —</p>
+          <p class="item-feature__description">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="features__item features__item--brief">
-          <h3 class="features__title">Красивая дорога</h3>
-          <p class="features__number">— №4 —</p>
-          <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <li class="features__item item-feature item-feature--brief">
+          <h3 class="item-feature__name">Красивая<br> дорога</h3>
+          <p class="item-feature__number">— №4 —</p>
+          <p class="item-feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="features__item features__item--brief">
-          <h3 class="features__title">Мало туристов</h3>
-          <p class="features__number">— №5 —</p>
-          <p class="features__description">Большинство едет в гранд каньон и толпится там</p>
+        <li class="features__item item-feature item-feature--brief">
+          <h3 class="item-feature__name">Мало<br> туристов</h3>
+          <p class="item-feature__number">— №5 —</p>
+          <p class="item-feature__description">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
 
     <section class="search">
       <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="search__button search__button--open" type="button">Поиск гостиницы в Седоне</button>
       <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="date-arrival">Дата заезда:</label>
           <input id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
-          <button class="search__calendar-picker" type="button">Выбор даты заезда</button>
+          <button class="search__calendar-picker" type="button">
+            <span class="visually-hidden">Выбор даты заезда</span>
+          </button>
         </p>
         <p>
           <label for="date-exit">Дата выезда:</label>
           <input id="date-exit" type="text" name="date-exit" value="" placeholder="4 июля 2017">
-          <button class="search__calendar-picker" type="button">Выбор даты выезда</button>
+          <button class="search__calendar-picker" type="button">
+            <span class="visually-hidden">Выбор даты выезда</span>
+          </button>
         </p>
         <p>
           <label for="amount-adults">Взрослые:</label>
@@ -111,7 +117,7 @@
   <footer class="main-footer">
     <p class="main-footer__hashtag">#visitSEDONA></p>
     <ul class="main-footer__social socials">
-      <li class="socials__item socials__item--tw"><a href="#" >Twitter</a></li>
+      <li class="socials__item socials__item--tw"><a href="#">Twitter</a></li>
       <li class="socials__item socials__item--fb"><a href="#">Facebook</a></li>
       <li class="socials__item socials__item--yt"><a href="#">YouTube</a></li>
     </ul>
