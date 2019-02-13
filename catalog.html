@@ -27,7 +27,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтры жилья</h2>
       <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="filters__infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li class="filters__option">
@@ -44,7 +44,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filters__house-type">
           <legend>Тип Жилья:</legend>
           <ul>
             <li class="filters__option">
@@ -61,33 +61,37 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filters__price">
           <legend>Стоимость в сутки (Р):</legend>
-            <label for="filter-price-start">От</label>
-            <input type="text" name="price-start" id="filter-price-start" value="" placeholder="0">
-            <label for="filter-price-end">До</label>
-            <input type="text" name="price-end" id="filter-price-end" value="" placeholder="3000">
+            <p>
+              <label for="filter-price-start">От</label>
+              <input type="text" name="price-start" id="filter-price-start" value="" placeholder="0">
+              <label for="filter-price-end">До</label>
+              <input type="text" name="price-end" id="filter-price-end" value="" placeholder="3000">
+            </p>
             <!-- Здесь будет ползунок-->
+            <button class="button filters__button" type="submit">Показать</button>
         </fieldset>
-        <button class="button filters__button" type="submit">Показать</button>
       </form>
     </section>
 
-    <section class="search">
+    <section class="search-results">
       <h2 class="visually-hidden">Результаты поиска жилья</h2>
-      <p class="search__found">Найдено: 3</p>
-      <p class="search__sorting-type">
-        Сортировка:
-        <a class="search__type search__type--current">По цене</a></li>
-        <a class="search__type" href="#">По типу</a></li>
-        <a class="search__type" href="#">По рейтингу</a></li>
-      </p>
-      <p class="search__sorting-order">
-        <a class="search__order search__order--down search__order--current">По убыванию</a>
-        <a class="search__order search__order--up" href="#">По возрастанию</a>
-      </p>
-      <ul class="search__results-list">
-        <li class="search__result result-item">
+      <div class="inner-columns">
+        <p class="search-results__found">Найдено: 3</p>
+        <p class="search-results__sorting-type">
+          Сортировка:
+          <a class="search-results__type search-results__type--current">По цене</a>
+          <a class="search-results__type" href="#">По типу</a>
+          <a class="search-results__type" href="#">По рейтингу</a>
+        </p>
+        <p class="search-results__sorting-order">
+          <a class="search-results__order search-results__order--down search-results__order--current">По убыванию</a>
+          <a class="search-results__order search-results__order--up" href="#">По возрастанию</a>
+        </p>
+      </div>
+      <ul class="search-results__results-list">
+        <li class="search-results__result result-item">
           <img class="result-item__img" src="img/hotel-small-1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
           <div class="result-item__info">
             <h3 class="result-item__lodging-name"><a href="#">Amara Resort & Spa</a></h3>
@@ -107,7 +111,7 @@
             <p class="result-item__rating-info">Рейтинг: 8,5</p>
           </div>
         </li>
-        <li class="search__result result-item">
+        <li class="search-results__result result-item">
           <img class="result-item__img" src="img/hotel-small-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
           <div class="result-item__info">
             <h3 class="result-item__lodging-name"><a href="#">Desert Quail Inn</a></h3>
@@ -127,7 +131,7 @@
             <p class="result-item__rating-info">Рейтинг: 8,9</p>
           </div>
         </li>
-        <li class="search__result result-item">
+        <li class="search-results__result result-item">
           <img class="result-item__img" src="img/hotel-small-3.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
           <div class="result-item__info">
             <h3 class="result-item__lodging-name"><a href="#">Villas at Poco Diablo</a></h3>
@@ -152,7 +156,7 @@
   </main>
 
   <footer class="main-footer">
-    <p class="main-footer__hashtag">#visitSEDONA></p>
+    <p class="main-footer__hashtag">#visitSEDONA</p>
     <ul class="main-footer__social socials">
       <li class="socials__item socials__item--tw"><a href="#">Twitter</a></li>
       <li class="socials__item socials__item--fb"><a href="#">Facebook</a></li>
